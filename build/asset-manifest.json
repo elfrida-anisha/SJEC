@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SJEC/static/css/main.e357ff1e.css",
+    "main.js": "/SJEC/static/js/main.3fbd4a41.js",
+    "index.html": "/SJEC/index.html",
+    "main.e357ff1e.css.map": "/SJEC/static/css/main.e357ff1e.css.map",
+    "main.3fbd4a41.js.map": "/SJEC/static/js/main.3fbd4a41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e357ff1e.css",
+    "static/js/main.3fbd4a41.js"
+  ]
+}
