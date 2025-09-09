@@ -19,7 +19,7 @@ const OrderConfirmationPage = () => {
         </div>
       )}
 
-      <button onClick={() => window.location.href = '/'}>Go to Home</button>
+      <button onClick={() => window.location.href = process.env.PUBLIC_URL +'/'}>Go to Home</button>
     </div>
   );
 };
