@@ -1,0 +1,61 @@
+.app { display: flex; background-color: black; /* same as before */ } .content { flex: 1; padding: 20px; } body{ background-color: black; }
+
+@media (max-width: 768px) {
+  /* For smaller screens (mobiles/tablets) */
+  
+  .app-container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  /* Sidebar Adjustment for mobile */
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+     /* Add some space for the sidebar */
+    padding: 10px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+
+  /* Category List Adjustments */
+  .category-list {
+    width: 100%; /* Ensure it spans full width */
+    display: flex;
+    flex-direction: column; /* Stack category cards vertically */
+    gap: 15px;
+    
+  }
+
+  /* Category Card Adjustments for mobile */
+  .category-card {
+    flex: 1 1 100%; /* Full width on small screens */
+    padding: 20px;
+  }
+
+  .category-card img {
+    width: 100%; /* Full-width images */
+    height: auto;
+  }
+}
+
+/* Ensure everything is responsive for smaller mobile devices */
+@media (max-width: 480px) {
+  .category-card {
+    flex: 1 1 100%; /* Take full width on even smaller screens */
+    padding: 10px;
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    padding: 5px;
+  }
+}

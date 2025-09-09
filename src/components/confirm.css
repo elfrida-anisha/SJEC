@@ -1,0 +1,26 @@
+/* orderConfirmation.css */
+.confirmation-page {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.confirmation-message p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
