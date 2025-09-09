@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SJEC/static/css/main.b9811fb8.css",
-    "main.js": "/SJEC/static/js/main.fa45efd6.js",
+    "main.js": "/SJEC/static/js/main.b681ee2a.js",
     "index.html": "/SJEC/index.html",
     "main.b9811fb8.css.map": "/SJEC/static/css/main.b9811fb8.css.map",
-    "main.fa45efd6.js.map": "/SJEC/static/js/main.fa45efd6.js.map"
+    "main.b681ee2a.js.map": "/SJEC/static/js/main.b681ee2a.js.map"
   },
   "entrypoints": [
     "static/css/main.b9811fb8.css",
-    "static/js/main.fa45efd6.js"
+    "static/js/main.b681ee2a.js"
   ]
 }
