@@ -6,7 +6,7 @@ const Egg = ({ title, linkTo }) => {
   return (
     <Link to={linkTo} className="category-card-link">
       <div className="category-card pink">
-        <img src={process.env.PUBLIC_URL + '/Assets/eggs.jpg'} alt={title} />
+        <img src={process.env.PUBLIC_URL + "/Assets/eggs.jpg" } alt={title} />
         <h3>{title}</h3>
       </div>
     </Link>
