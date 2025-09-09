@@ -1,6 +1,6 @@
-// Updated SearchBar.js with Search Icon
+
 import React from "react";
-import './SearchBar.css'; // Import the styling
+import './SearchBar.css'; 
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
@@ -11,7 +11,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      {/* Optional: Search icon */}
+     
       <i className="fa fa-search search-icon"></i>
     </div>
   );

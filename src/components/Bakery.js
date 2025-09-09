@@ -6,7 +6,7 @@ const Bakery = ({ title, linkTo }) => {
   return (
     <Link to={linkTo} className="category-card-link">
       <div className="category-card orange">
-        <img src="/Assets/bakery.jpeg" alt={title} />
+        <img src={process.env.PUBLIC_URL + '/Assets/bakery.jpeg'} alt={title} />
         <h3>{title}</h3>
       </div>
     </Link>

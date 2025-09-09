@@ -21,7 +21,6 @@ function App() {
       <div className="app-container" style={{ display: "flex" }}>
         <Sidebar />
         <div className="main-content" style={{ flex: 1, padding: "20px" }}>
-          
           <Routes>
             <Route
               path="/"
@@ -37,17 +36,17 @@ function App() {
                 >
                   <CategoryCard
                     title="Vegetables & Fruits"
-                    imageUrl="/Assets/vegetable.webp"
+                    imageUrl={process.env.PUBLIC_URL + "/Assets/vegetable.webp"}
                     linkTo="/ProductCategoryPage"
                   />
                   <Bakery
                     title="Bakery"
-                    imageUrl="/Assets/bakery.jpeg"
+                    imageUrl={process.env.PUBLIC_URL + "/Assets/bakery.jpeg"}
                     linkTo="/Bakeryitems"
                   />
                   <Egg
                     title="Eggs"
-                    imageUrl="/Assets/Eggs.jpg"
+                    imageUrl={process.env.PUBLIC_URL + "/Assets/Eggs.jpg"}
                     linkTo="/eggsprice"
                   />
                 </div>

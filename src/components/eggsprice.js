@@ -9,7 +9,7 @@ const ProductCategoryPage = () => {
 
   const products = {
     veggies: [
-      { name: "Eggs", price: 7, oldPrice: 8, img: "./Assets/eggs.jpg" },
+      { name: "Eggs", price: 7, oldPrice: 8, img:process.env.PUBLIC_URL + "/Assets/eggs.jpg" },
       
     ],
    
@@ -19,7 +19,7 @@ const ProductCategoryPage = () => {
     addToCart(item);
     setSuccessMessage(`"${item.name}" has been added to your cart.`);
 
-    // Clear the success message after 3 seconds
+    
     setTimeout(() => {
       setSuccessMessage("");
     }, 3000);

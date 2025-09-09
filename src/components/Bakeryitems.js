@@ -10,10 +10,10 @@ const ProductCategoryPage = () => {
   
   const products = {
     veggies: [
-      { id: 8, name: "Puff", price: 20, oldPrice: 25, img: "./Assets/puff.jpg" },
-      { id: 9, name: "Cookies", price: 19, oldPrice: 25, img: "./Assets/cookie.jpeg" },
-      { id: 10, name: "Pizza", price: 149, oldPrice: 200, img: "./Assets/pizza.jpg" },
-      { id: 11, name: "Bread", price: 39, oldPrice: 50, img: "./Assets/bread.jpg" }
+      { id: 8, name: "Puff", price: 20, oldPrice: 25, img: process.env.PUBLIC_URL +"/Assets/puff.jpg" },
+      { id: 9, name: "Cookies", price: 19, oldPrice: 25, img: process.env.PUBLIC_URL+ "/Assets/cookie.jpeg" },
+      { id: 10, name: "Pizza", price: 149, oldPrice: 200, img:process.env.PUBLIC_URL+ "/Assets/pizza.jpg" },
+      { id: 11, name: "Bread", price: 39, oldPrice: 50, img: process.env.PUBLIC_URL+"/Assets/bread.jpg" }
     ],
   };
 
