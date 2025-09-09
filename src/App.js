@@ -46,7 +46,7 @@ function App() {
                   />
                   <Egg
                     title="Eggs"
-                    imageUrl={process.env.PUBLIC_URL + "/Assets/Eggs.jpg"}
+                    imageUrl={process.env.PUBLIC_URL + "/Assets/eggs.jpg"}
                     linkTo="/eggsprice"
                   />
                 </div>
