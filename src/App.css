@@ -1,13 +1,13 @@
-.app { display: flex; background-color: black; /* same as before */ } .content { flex: 1; padding: 20px; } body{ background-color: black; }
+.app { display: flex; background-color: black; } .content { flex: 1; padding: 20px; } body{ background-color: black; }
 
 @media (max-width: 768px) {
-  /* For smaller screens (mobiles/tablets) */
+
   
   .app-container {
-    flex-direction: column; /* Stack sidebar and content vertically */
+    flex-direction: column; 
   }
 
-  /* Sidebar Adjustment for mobile */
+ 
   .sidebar {
     width: 100%;
     position: relative;
@@ -16,37 +16,37 @@
   }
 
   .main-content {
-    margin-left: 0;
-     /* Add some space for the sidebar */
+    margin-left: 0;     
+
     padding: 10px;
     transition: margin-left 0.3s ease-in-out;
   }
 
-  /* Category List Adjustments */
+  
   .category-list {
-    width: 100%; /* Ensure it spans full width */
+    width: 100%; 
     display: flex;
-    flex-direction: column; /* Stack category cards vertically */
+    flex-direction: column; 
     gap: 15px;
     
   }
 
-  /* Category Card Adjustments for mobile */
+  
   .category-card {
-    flex: 1 1 100%; /* Full width on small screens */
+    flex: 1 1 100%; 
     padding: 20px;
   }
 
   .category-card img {
-    width: 100%; /* Full-width images */
+    width: 100%; 
     height: auto;
   }
 }
 
-/* Ensure everything is responsive for smaller mobile devices */
+
 @media (max-width: 480px) {
   .category-card {
-    flex: 1 1 100%; /* Take full width on even smaller screens */
+    flex: 1 1 100%; 
     padding: 10px;
   }
   

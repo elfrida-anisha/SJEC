@@ -8,16 +8,16 @@ import Egg from "./components/Egg";
 import ProductCategoryPage from "./components/ProductCategoryPage";
 import Bakeryitems from "./components/Bakeryitems.js";
 import Eggsprice from "./components/eggsprice.js";
-import CartPage from "./components/cartpage";  // Import the CartPage component
+import CartPage from "./components/cartpage";  
 import { CartProvider } from "./components/cartcontext"; 
-import CheckoutPage from "./components/checkout";  // Import CartProvider
+import CheckoutPage from "./components/checkout"; 
 import OrderConfirmationPage from "./components/confirm";
 
 import "./App.css";
 
 function App() {
   return (
-    <CartProvider>  {/* Wrap the app with CartProvider to share cart context */}
+    <CartProvider> 
       <div className="app-container" style={{ display: "flex" }}>
         <Sidebar />
         <div className="main-content" style={{ flex: 1, padding: "20px" }}>
@@ -56,7 +56,7 @@ function App() {
             <Route path="/ProductCategoryPage" element={<ProductCategoryPage />} />
             <Route path="/bakeryitems" element={<Bakeryitems />} />
             <Route path="/eggsprice" element={<Eggsprice />} />
-            <Route path="/cart" element={<CartPage />} />  {/* Add Route for CartPage */}
+            <Route path="/cart" element={<CartPage />} />  
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/order-confirmation" element={<OrderConfirmationPage />} />
           </Routes>

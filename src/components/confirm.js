@@ -1,11 +1,11 @@
-// OrderConfirmationPage.js
+
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "./confirm.css"; // Add any custom styles if necessary
+import "./confirm.css"; 
 
 const OrderConfirmationPage = () => {
   const location = useLocation();
-  const { confirmationMessage } = location.state || {}; // Get message from state
+  const { confirmationMessage } = location.state || {}; 
 
   return (
     <div className="confirmation-page">

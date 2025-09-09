@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./ProductCategoryPage.css";
-import { useCart } from "./cartcontext"; // Import the useCart hook
+import { useCart } from "./cartcontext"; 
 
 const ProductCategoryPage = () => {
   const [activeTab] = useState("veggies");
   const [successMessage, setSuccessMessage] = useState(""); 
   const { addToCart } = useCart();
 
-  // Example list of products
+  
   const products = {
     veggies: [
       { id: 8, name: "Puff", price: 20, oldPrice: 25, img: "./Assets/puff.jpg" },
@@ -21,7 +21,7 @@ const ProductCategoryPage = () => {
     addToCart(item);
     setSuccessMessage(`"${item.name}" has been added to your cart.`);
 
-    // Clear the success message after 3 seconds
+    
     setTimeout(() => {
       setSuccessMessage("");
     }, 3000);
@@ -31,7 +31,7 @@ const ProductCategoryPage = () => {
     <div className="category-page">
       <h2>Bakery Items</h2>
 
-      {/* Success message */}
+      
       {successMessage && <div className="success-message">{successMessage}</div>}
 
       <div className="product-grid">
